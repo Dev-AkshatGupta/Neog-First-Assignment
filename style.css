@@ -11,6 +11,7 @@
     --div-background: #5e6466;
     --white: #fcfcfc;
     --blue: #1d3557;
+    --blue-light:#0077b6;
     --hover-card-blue: #dbe7e4;
     --red-selecting-color:#e63946;
     --color-selection-green:#5f9976;
@@ -75,6 +76,9 @@ img {
     width: 350px;
     background-color: var(--white);
     border-radius: 4px;
+}
+.greying{
+    color: var(--div-background);
 }
 
 /* card element main content */
@@ -213,14 +217,14 @@ img {
 }
 .nav-hero button{
     background-color:var(--blue);
+    padding: .5rem;
 }
 .nav-hero i{
     font-size: 1.5rem;
-    /* background-color: var(--white); */
     color: var(--white);
 }
 .nav-hero button:hover{
-    background-color: var(--blue-selection);
+    background-color: var(--blue-light);
     border-radius: 50%;
     
 }
@@ -262,7 +266,6 @@ border: solid black;
     font-size: 1.3rem;
     border-radius: 15px;
     padding: .6rem;
-
 }
 .toast-text-buttons.highlight{
     color: var(--red-selecting-color);
@@ -270,6 +273,78 @@ border: solid black;
 .toast-text-buttons:hover{
 background-color: var(--div-background);
 }
-.toast-text-buttons icon:hover{
+.badges-div{
+    position: relative;
+    font-size: 5rem;
+}
+.badges-div-relative{
+    color: var(--hover-card-blue);
+    background-color: var(--blue-light);
+    border-radius: 50%;
+    font-size: 2rem;
+    text-align: center;
+    padding-right: .3rem;
+    padding-left: .3rem;
+    position: absolute;
+    z-index: 1;
+    top:-.7rem;
+    right:-.7rem;
+}
+/* Header Square  */
+.square-dialogue-header{
+    width: 20vw;
+    height:25vh;
+    border-radius: 10px;
+    background-color: var(--hover-card-blue);
+    box-shadow: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.square-dialouges-header-heading{
+    margin-left: 1rem;
+}
+.square-dialogue-buttons{
+    margin-top: 8%;
+    display: flex;
+    justify-content: flex-end;
 
+}
+.square-button{
+margin-right: 2%;
+background-color: var(--hover-card-blue);
+color: var(--blue-light);
+border-radius: .8rem;
+}
+.square-button:hover{
+    background-color: var(--blue-light);
+    color: whitesmoke;
+}
+/* Tabs styling components */
+.tabs-div{
+    background-color: var(--hover-card-blue);
+    padding: 0;
+}
+.tabs-div-ul{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding:0;
+    margin: 0;
+}
+.tabs-div-ul-li{
+    list-style: none;
+    cursor: pointer;
+    margin:.5rem;
+    padding: .5rem;
+}
+.tabs-div-ul-li:hover{
+    color: var(--blue-light);
+    border-bottom: var(--blue-light) solid 1px;
+    background-color: var(--blue-selection);
+}
+.tabs-div-ul-li+.tabs-div-ul-li{
+    margin-left: .6rem;
+  
 }
