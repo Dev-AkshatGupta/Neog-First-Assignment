@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Pacifico&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --body-background-color: #d8ebf0;
+    --div-background: #5e6466;
+    --white: #fcfcfc;
+    --blue: #1d3557;
+    --hover-card-blue: #dbe7e4;
+    --red-selecting-color:#e63946;
+    --color-selection-green:#5f9976;
+    --selection-yellow:#fcbf49;
+    --blue-selection:#a8dadc;
+
+}
+
+/* general styles */
+body {
+    background-color: var(--body-background-color);
+}
+
+button {
+    border: none;
+    background-color: var(--white);
+}
+
+/* general classes */
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.border {
+    border: red 2px solid;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.highlight {
+    color: var(--blue);
+}
+.hero-div {
+    width: 100%;
+    height: 400px;
+    border: var(--blue) 2px solid;
+    border-radius: 10%;
+    background-color: whitesmoke;
+}
+
+/* div of card element */
+
+.hover:hover {
+    background-color: var(--hover-card-blue);
+
+}
+
+/* card element  */
+.card-element .border-radius {
+    border-radius: 4px;
+}
+
+.card-element {
+    font-family: 'roboto', sans-serif;
+    width: 350px;
+    background-color: var(--white);
+    border-radius: 4px;
+}
+
+/* card element main content */
+.card-element__main {
+    display: flex;
+
+}
+
+.card__image-container {
+    width: 110px;
+    height: 110px;
+
+}
+
+.card__image-container>img {
+    border-radius: 4px 4px 0 0;
+}
+
+.card-element__main-text {
+    margin-left: 10px;
+
+}
+
+.card-element__main-text>p {
+    color: var(--div-background);
+}
+
+.card-element__bottom {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.card-button {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.i {
+    border-radius: 50%;
+}
+
+.i-x {
+    border-radius: 50%;
+    padding: 1px 15px;
+}
+
+/* drawer element specific classes */
+.hero-drawer {
+    width: 256px;
+    height: 266px;
+    background-color: var(--white);
+    font-family: 'roboto', sans-serif;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+
+.drawer-header-heading {
+    font-weight: 400;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+.drawer-header-p{
+    color: var(--div-background);
+    margin-top: 2px;
+    margin-left:12px;
+    margin-bottom: 2px;
+}
+.drawer-list-ul{
+    width: 255px;
+    height: 202px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    margin-top: 5px;
+    align-items: flex-start;
+    padding-left: 5px;
+}
+ .drawer-list-ul-li {
+    list-style: none;
+    padding: 10px;
+    padding-right: 50px;
+    cursor: pointer;
+    align-self: flex-start;
+    border-radius: 10px;
+}
+.drawer-list-ul-li:hover{
+    background-color: var(--hover-card-blue);
+}
+/* .active{
+    background-color: var(--selection-yellow);
+    color: var(--red-selecting-color);
+    border-radius: 10px;
+} */
+.active{
+    background-color: var(--selection-yellow);
+    color: var(--red-selecting-color);
+    border-radius: 10px;
+}
+
+.drawer-list-ul-li>i{
+    display: inline-block;
+    margin-right:2px;
+}
+.drawer-list-ul-li .drawer-list-text{
+    display: inline-block;
+    margin-left: 25px;
+}
+.cheveron-buttons{
+    display: inline-block;
+    margin-left: 18px;
+}
+/* active class updation to the arrows below most */
+ .cheveron-buttons .fa-chevron-up {
+     display: none;
+ }
+ .drawer-list-ul-li.active .fa-chevron-up  {
+    display: block; 
+}
+.drawer-list-ul-li.active .fa-chevron-down{
+    display: none;
+}
+
+/* Navigation Bar Styles */
+.nav-hero{
+    width: 80%;
+    background-color: var(--blue);
+    color: var(--body-background-color);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding: 1rem;
+
+}
+.left-nav-content span{
+    margin-left: .5rem;
+}
+.nav-hero i{
+    font-size: 1.5rem;
+    background-color: var(--white);
+    color: var(--blue);
+}
+.nav-hero button:hover{
+    background-color: var(--blue-selection);
+    border-radius: 50%;
+    
+}
+.right-nav-content{
+margin-right: 2rem;
+}
+.right-nav-content-button+.right-nav-content-button{
+   margin-left: .5rem;
+}

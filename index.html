@@ -1,14 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
+
 <body>
-    
+    <div class="hero-div flex-center">
+        <div class="card-element ">
+            <main class="card-element__main hover">
+                <div class="card__image-container"><img src="./images/card-element-banaras.jpg"
+                        alt="A beautiful sceneric image"></div>
+                <div class="card-element__main-text">
+                    <h3>Our Changing Planet</h3>
+                    <p>by kurt wagner</p>
+                </div>
+            </main>
+
+            <div class="card-element__bottom">
+                <button class="card-button highlight hover"> <span>Read</span></button>
+                <button class="card-button highlight hover"><span>Bookmark</span></button>
+                <button class="card-button i hover"><i class="far fa-heart"></i></button>
+                <button class="card-button i hover"><i class="fas fa-share-alt"></i></button>
+                <button class="card-button i-x hover"><i class="fas fa-ellipsis-v"></i></button>
+            </div>
+        </div>
+
+    </div>
+    <div class="hero-div flex-center">
+        <div class="hero-drawer ">
+            <div class="drawer-header">
+                <h2 class="drawer-header-heading">Title</h2>
+                <p class="drawer-header-p">Random Text</p>
+            </div>
+            <div class="drawer-list">
+                <ul class="drawer-list-ul ">
+                    <li class="drawer-list-ul-li  "><i class="fas fa-inbox fa-lg"></i><span class="drawer-list-text"> Inbox</span> </li>
+                    <li class="drawer-list-ul-li "><i class="fas fa-star fa-lg"></i> <span class="drawer-list-text">Star</span></li>
+                    <li class="drawer-list-ul-li "><i class="fas fa-paper-plane fa-lg"></i> <span class="drawer-list-text">Sent-Mail</span></li>
+                    <li class="drawer-list-ul-li "><i class="fas fa-envelope-open fa-lg hover"></i><span class="drawer-list-text">Categories</span><span class="cheveron-buttons"><i class="fas fa-chevron-down dropdown"></i><i class="fas fa-chevron-up up"></i></span></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="hero-div flex-center">
+        <nav class="nav-hero">
+            <div class="left-nav-content">
+                <button><i class="fa fa-bars" aria-hidden="true"></i></button>
+                <span>Rajasthan,Bharat</span>
+            </div>
+
+            <div class="right-nav-content ">
+                <button class="right-nav-content-button"><i class="fa fa-download" aria-hidden="true"></i></button>
+                <button class="right-nav-content-button"><i class="fa fa-print" aria-hidden="true"></i></button>
+                <button class="right-nav-content-button"><i class="fas fa-bookmark"></i></button>
+            </div>
+        </nav>
+    </div>
     <script src="./script.js"></script>
 </body>
+
 </html>
