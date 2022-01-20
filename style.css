@@ -16,7 +16,7 @@
     --color-selection-green:#5f9976;
     --selection-yellow:#fcbf49;
     --blue-selection:#a8dadc;
-
+    --toast-black:#333;
 }
 
 /* general styles */
@@ -26,7 +26,7 @@ body {
 
 button {
     border: none;
-    background-color: var(--white);
+   
 }
 
 /* general classes */
@@ -50,7 +50,7 @@ img {
 }
 .hero-div {
     width: 100%;
-    height: 400px;
+    height: 100vh;
     border: var(--blue) 2px solid;
     border-radius: 10%;
     background-color: whitesmoke;
@@ -67,7 +67,9 @@ img {
 .card-element .border-radius {
     border-radius: 4px;
 }
-
+.card-element button{
+    background-color:var(--white);
+}
 .card-element {
     font-family: 'roboto', sans-serif;
     width: 350px;
@@ -165,11 +167,7 @@ img {
 .drawer-list-ul-li:hover{
     background-color: var(--hover-card-blue);
 }
-/* .active{
-    background-color: var(--selection-yellow);
-    color: var(--red-selecting-color);
-    border-radius: 10px;
-} */
+
 .active{
     background-color: var(--selection-yellow);
     color: var(--red-selecting-color);
@@ -213,10 +211,13 @@ img {
 .left-nav-content span{
     margin-left: .5rem;
 }
+.nav-hero button{
+    background-color:var(--blue);
+}
 .nav-hero i{
     font-size: 1.5rem;
-    background-color: var(--white);
-    color: var(--blue);
+    /* background-color: var(--white); */
+    color: var(--white);
 }
 .nav-hero button:hover{
     background-color: var(--blue-selection);
@@ -228,4 +229,47 @@ margin-right: 2rem;
 }
 .right-nav-content-button+.right-nav-content-button{
    margin-left: .5rem;
+}
+/* Toast-Display-Styles */
+.toast-page-layout{
+height: 80vh;
+width: 80vw;
+border: solid black;
+}
+.toast-div{
+    position: relative;
+}
+.toast{
+    background-color: var(--toast-black);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    color: var(--white);
+    font-size:1rem;
+    padding:.5rem ;
+    position: absolute;
+    z-index: 1;
+    bottom: 4rem;
+    width:50vw;
+}
+.toast-text{
+    background-color: var(--toast-black);
+}
+.toast-text-buttons{
+    background-color: var(--toast-black);
+    color: var(--white);
+    font-size: 1.3rem;
+    border-radius: 15px;
+    padding: .6rem;
+
+}
+.toast-text-buttons.highlight{
+    color: var(--red-selecting-color);
+ }
+.toast-text-buttons:hover{
+background-color: var(--div-background);
+}
+.toast-text-buttons icon:hover{
+
 }
