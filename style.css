@@ -321,6 +321,11 @@ border-radius: .8rem;
     color: whitesmoke;
 }
 /* Tabs styling components */
+.active-tabs{
+    color: var(--blue-light);
+    border-bottom: var(--toast-black) solid 2px;
+    background-color: var(--blue-selection);
+}
 .tabs-div{
     background-color: var(--hover-card-blue);
     padding: 0;
@@ -336,7 +341,6 @@ border-radius: .8rem;
 .tabs-div-ul-li{
     list-style: none;
     cursor: pointer;
-    margin:.5rem;
     padding: .5rem;
 }
 .tabs-div-ul-li:hover{
@@ -345,6 +349,5 @@ border-radius: .8rem;
     background-color: var(--blue-selection);
 }
 .tabs-div-ul-li+.tabs-div-ul-li{
-    margin-left: .6rem;
-  
+    padding-left: .6rem;  
 }
