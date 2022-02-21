@@ -235,8 +235,8 @@ margin-right: 2rem;
 }
 /* Toast-Display-Styles */
 .toast-page-layout{
-height: 80vh;
-width: 80vw;
+height: 80%;
+width: 80%;
 border: solid black;
 }
 .toast-div{
